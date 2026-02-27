@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>百家乐</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+    <div id="pc-wrapper">
+        <div id="phone-shell">
+            <!-- <div class="phone-notch"></div> -->
+            <!-- 游戏区域 -->
+            <div id="game-root">
+                <div id="game-container">
+                    <!--背景层-->
+                    <div id="bg-layer" class="layer">
+                        <div class="container">
+                            <!-- 游戏区 -->
+                            <div class="game-area">
+                                <!--功能显示区-->
+                                <function-area id="function-area"></function-area>
+                                <!--发牌显示区-->
+                                <deal-area id="deal-area"></deal-area>
+                                <div class="hashCode">
+                                    <span>哈希码: </span><span>123444567987654</span>
+                                </div>
+                                <!--下注显示区-->
+                                <bet-area id="bet-area"></bet-area>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="content-layer" class="layer"></div>
+                    <div id="popup-layer" class="layer"></div>
+                    <div id="float-layer" class="layer"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="src/index.js"></script>
+</body>
+
+
+</html>

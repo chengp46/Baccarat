@@ -1,0 +1,115 @@
+{
+  "inputs": {
+    "src/utils/WsClient.js": {
+      "bytes": 1689,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/FunctionArea.js": {
+      "bytes": 1975,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/EventBus.js": {
+      "bytes": 667,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/TimerManager.js": {
+      "bytes": 4721,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/components/DealArea.js": {
+      "bytes": 2399,
+      "imports": [
+        {
+          "path": "src/utils/TimerManager.js",
+          "kind": "import-statement",
+          "original": "../utils/TimerManager"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/components/BetArea.js": {
+      "bytes": 8014,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/utils/Adapt.js": {
+      "bytes": 2469,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/index.js": {
+      "bytes": 1695,
+      "imports": [
+        {
+          "path": "src/utils/WsClient.js",
+          "kind": "import-statement",
+          "original": "./utils/WsClient.js"
+        },
+        {
+          "path": "src/components/FunctionArea.js",
+          "kind": "import-statement",
+          "original": "./components/FunctionArea.js"
+        },
+        {
+          "path": "src/components/EventBus.js",
+          "kind": "import-statement",
+          "original": "./components/EventBus.js"
+        },
+        {
+          "path": "src/components/DealArea.js",
+          "kind": "import-statement",
+          "original": "./components/DealArea.js"
+        },
+        {
+          "path": "src/components/BetArea.js",
+          "kind": "import-statement",
+          "original": "./components/BetArea.js"
+        },
+        {
+          "path": "src/utils/Adapt.js",
+          "kind": "import-statement",
+          "original": "./utils/Adapt.js"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "dist/index.js": {
+      "imports": [],
+      "exports": [],
+      "entryPoint": "src/index.js",
+      "inputs": {
+        "src/utils/WsClient.js": {
+          "bytesInOutput": 937
+        },
+        "src/components/FunctionArea.js": {
+          "bytesInOutput": 1205
+        },
+        "src/components/EventBus.js": {
+          "bytesInOutput": 327
+        },
+        "src/utils/TimerManager.js": {
+          "bytesInOutput": 1668
+        },
+        "src/components/DealArea.js": {
+          "bytesInOutput": 1734
+        },
+        "src/components/BetArea.js": {
+          "bytesInOutput": 6770
+        },
+        "src/utils/Adapt.js": {
+          "bytesInOutput": 1281
+        },
+        "src/index.js": {
+          "bytesInOutput": 600
+        }
+      },
+      "bytes": 14523
+    }
+  }
+}

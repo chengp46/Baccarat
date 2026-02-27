@@ -1,0 +1,101 @@
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+width=device-width	页面宽度 = 手机屏幕宽度
+initial-scale=1.0	初始缩放比例 1:1
+
+使用响应式布局
+使用百分比 / vw / vh
+1vw	屏幕宽度 1%
+1vh	屏幕高度 1%
+
+.panel {
+    width: 100vw;
+    height: 100vh;
+}
+
+三、Flex 自适应布局（最常用）
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+四、媒体查询（适配不同尺寸）
+
+/* 手机 */
+@media (max-width: 768px) {
+    .title {
+        font-size: 18px;
+    }
+}
+
+/* 平板 */
+@media (min-width: 769px) {
+    .title {
+        font-size: 24px;
+    }
+}
+
+
+五、图片自适应
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

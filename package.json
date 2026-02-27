@@ -1,0 +1,26 @@
+{
+  "name": "baccarat",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "cross-env-shell \"start http://127.0.0.1:6000\"",
+    "open": "cross-env-shell \"start http://127.0.0.1:6000\"",
+    "build": "cross-env NODE_ENV=production node scripts/build.js",
+    "build:analyze": "node scripts/build.js --analyze",
+    "serve": "node scripts/serve.js",
+    "test:build": "node scripts/test-build.js",
+    "start": "npm run dev",
+    "preview": "npm run build && npx serve dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cross-env": "^10.1.0",
+    "esbuild": "^0.27.2",
+    "esbuild-copy-static-files": "^0.1.0",
+    "esbuild-plugin-copy": "^2.1.1",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
