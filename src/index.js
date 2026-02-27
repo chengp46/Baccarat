@@ -31,7 +31,9 @@ class App {
         this.funcArea = document.getElementById("function-area");
         this.dealArea = document.getElementById("deal-area");
         this.funcArea.showInfo();
-        this.ws = new WSClient("");
+        this.ws = new WSClient("ws:192.168.100.62:6006/ws");
+        this.ws.connect();
+        
         UIBus.on("func-click", data => {
             switch (data.id) {
                 case "1":

@@ -13,3 +13,6 @@ npm run test:build
 
 # 直接使用 ESBuild API
 node -e "const esbuild = require('esbuild'); esbuild.build({...})"
+
+
+nginx -s reload

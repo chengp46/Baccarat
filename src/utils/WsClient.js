@@ -15,10 +15,17 @@ export class WSClient {
         this.ws.onopen = () => {
             console.log("WS connected");
             this.startHeartBeat();
+            this.ws.send({ msg_id: "login_req", option: 0 });
         };
 
         this.ws.onmessage = (e) => {
-            console.log("WS message:", e.data);
+            switch (e.data.msg_id) {
+                case "login_resp":
+                    console.log("login message:", e.data);
+                    break;
+                default:
+                    console.log("WS message:", e.data);
+            }
         };
 
         this.ws.onerror = () => {
@@ -44,7 +51,7 @@ export class WSClient {
 
     startHeartBeat() {
         this.heartTimer = setInterval(() => {
-            this.send({ cmd: "ping" });
+            this.send({ msg_id: "heartbeat_req", id: 100 });
         }, 5000);
     }
 
